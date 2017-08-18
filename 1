@@ -1,0 +1,110 @@
+package aulaOka;
+
+import java.awt.Color;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.Graphics2D;
+
+public class Teste {
+
+	static JFrame tela = new JFrame();
+	static JPanel painel = new JPanel();
+	static JButton btnDesenhar = new JButton("DESENHAR");
+	static JButton btnLimpar = new JButton("LIMPAR");
+
+	public static void main(String[] args) {
+
+		Tela();
+
+	}
+
+	public static void Tela() {
+
+		tela.setBounds(400, 100, 500, 500);
+		tela.setLayout(null);
+		tela.setVisible(true);
+		tela.add(painel).setBounds(10, 10, 300, 440);
+		painel.setBackground(Color.LIGHT_GRAY);
+		tela.add(btnDesenhar).setBounds(350, 10, 100, 30);
+		tela.add(btnLimpar).setBounds(350, 50, 100, 30);
+
+		btnDesenhar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+
+				Graphics2D g2d = (Graphics2D) painel.getGraphics();
+				g2d.fillRect(120, 130, 10, 10); // 1
+				g2d.fillRect(130, 130, 10, 10); // 1
+				g2d.fillRect(140, 130, 10, 10); // 1
+				g2d.fillRect(150, 130, 10, 10); // 1
+				g2d.fillRect(160, 130, 10, 10); // 1
+				g2d.fillRect(170, 130, 10, 10); // 1
+				g2d.fillRect(180, 130, 10, 10); // 1
+
+				g2d.fillRect(110, 140, 10, 10); // 2e
+				g2d.fillRect(120, 140, 10, 10); // 2e
+				g2d.fillRect(180, 140, 10, 10); // 2d
+				g2d.fillRect(190, 140, 10, 10); // 2d
+				g2d.fillRect(200, 140, 10, 10); // 2d
+
+				g2d.fillRect(100, 150, 10, 10); // 3e
+				g2d.fillRect(110, 150, 10, 10); // 3e
+				g2d.fillRect(200, 150, 10, 10); // 3d
+				g2d.fillRect(210, 150, 10, 10); // 3d
+
+				g2d.fillRect(90, 160, 10, 10); // 4e
+				g2d.fillRect(100, 160, 10, 10); // 4e
+				g2d.fillRect(210, 160, 10, 10); // 4d
+				g2d.fillRect(220, 160, 10, 10); // 4d
+
+				g2d.fillRect(90, 170, 10, 10); // 5e
+				g2d.fillRect(220, 170, 10, 10); // 5d
+
+				g2d.fillRect(80, 180, 10, 10); // 6e
+				g2d.fillRect(90, 180, 10, 10); // 6e
+				g2d.fillRect(220, 180, 10, 10); // 6d
+				g2d.fillRect(230, 180, 10, 10); // 6d
+
+				g2d.fillRect(80, 190, 10, 10); // 7e
+				g2d.fillRect(230, 190, 10, 10); // 7d
+
+				g2d.fillRect(80, 200, 10, 10); // 8e
+				g2d.fillRect(230, 200, 10, 10); // 8d
+
+				g2d.fillRect(80, 210, 10, 10); // 9e
+				g2d.fillRect(230, 210, 10, 10); // 9d
+
+				g2d.fillRect(80, 220, 10, 10); // 10e
+				g2d.fillRect(230, 220, 10, 10); // 10d
+				g2d.fillRect(110, 220, 10, 10); // 10
+				g2d.fillRect(120, 220, 10, 10); // 10
+				g2d.fillRect(130, 220, 10, 10); // 10
+				g2d.fillRect(140, 220, 10, 10); // 10
+				g2d.fillRect(150, 220, 10, 10); // 10
+				g2d.fillRect(160, 220, 10, 10); // 10
+				g2d.fillRect(170, 220, 10, 10); // 10
+				g2d.fillRect(180, 220, 10, 10); // 10
+				g2d.fillRect(190, 220, 10, 10); // 10
+				g2d.fillRect(200, 220, 10, 10); // 10
+
+				g2d.fillRect(80, 230, 10, 10); // 11e
+				g2d.fillRect(90, 230, 10, 10); // 11e
+				g2d.fillRect(100, 230, 10, 10); // 11e
+				g2d.fillRect(110, 230, 10, 10); // 11e
+				g2d.fillRect(140, 230, 10, 10); // 11e
+				g2d.fillRect(170, 230, 10, 10); // 11d
+				g2d.fillRect(200, 230, 10, 10); // 10d
+				g2d.fillRect(210, 230, 10, 10); // 10d
+				g2d.fillRect(220, 230, 10, 10); // 10d
+				g2d.fillRect(230, 230, 10, 10); // 11d
+
+				g2d.dispose();
+
+			}
+		});
+	}
+
+}
